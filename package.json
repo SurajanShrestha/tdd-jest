@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-test-renderer": "^18.0.7",
     "react-test-renderer": "^18.2.0"
   }
 }
