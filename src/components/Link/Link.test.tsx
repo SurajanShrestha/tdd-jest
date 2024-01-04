@@ -25,6 +25,11 @@ it("link changes when hovered", () => {
 
   // Re-rendering
   // In snapshot: "className" of <a> will be "hovered"
+  /* 
+    IMPORTANT 💡: If you change the code for STATUS.HOVERED from "hovered" to "hovering"(let's say), tests will fail.
+    This will let you keep track of your code, especially if another developer changes something in the component that
+    is shared across or used in many react pages.
+  */
   tree = component.toJSON() as renderer.ReactTestRendererJSON;
   expect(tree).toMatchSnapshot();
 
