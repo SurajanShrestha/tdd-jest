@@ -29,7 +29,6 @@ export const LoginForm = ({ onSubmit }: Props) => {
         initialValues={{
           firstName: "",
           lastName: "",
-          email: "",
         }}
         onSubmit={handleSubmit}
       >
