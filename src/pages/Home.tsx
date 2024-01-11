@@ -38,7 +38,14 @@ export const HomePage = () => {
       </p>
       <h3>Testing done in these pages 👇:</h3>
       <div>
-        <ol style={{ ...flexCenteredSx, flexDirection: "column", gap: 12 }}>
+        <ol
+          style={{
+            ...flexCenteredSx,
+            flexDirection: "column",
+            gap: 12,
+            marginBottom: 60,
+          }}
+        >
           <li>
             <Link to="/counter" className="App-link">
               Counter
@@ -51,6 +58,12 @@ export const HomePage = () => {
           </li>
         </ol>
       </div>
+      <small style={{ background: "rgb(0,0,0,0.2)", padding: 8, fontSize: 16 }}>
+        Note 💡: We've also written Tests for small components which are not
+        mounted in the UI.
+        <br /> Just browse through the <code>/components</code> folder to see
+        those tests.
+      </small>
     </header>
   );
 };

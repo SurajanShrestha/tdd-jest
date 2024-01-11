@@ -13,7 +13,7 @@ export const Counter = () => {
 
   return (
     <div>
-      <h3 data-testid="counter">Count: {count}</h3>
+      <h3 data-testid="counter">Count 🔢: {count}</h3>
       <button onClick={up} data-testid="count-up" style={{ marginRight: 8 }}>
         Increase Count
       </button>

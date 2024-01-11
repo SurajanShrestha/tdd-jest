@@ -34,6 +34,7 @@ export const LoginForm = ({ onSubmit }: Props) => {
         onSubmit={handleSubmit}
       >
         <Form>
+          <h3>Testing Form 📑</h3>
           <FormBlock>
             <label htmlFor="firstName">First Name</label>
             <Field id="firstName" name="firstName" placeholder="Jane" />
