@@ -38,10 +38,15 @@ export const HomePage = () => {
       </p>
       <h3>Testing done in these pages 👇:</h3>
       <div>
-        <ol style={flexCenteredSx}>
+        <ol style={{ ...flexCenteredSx, flexDirection: "column", gap: 12 }}>
           <li>
             <Link to="/counter" className="App-link">
               Counter
+            </Link>
+          </li>
+          <li>
+            <Link to="/form" className="App-link">
+              Form
             </Link>
           </li>
         </ol>
