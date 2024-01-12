@@ -20,4 +20,8 @@ test("should fetch posts", async () => {
 
     expect(screen.getByText(/ea molestias/i)).toBeTruthy();
   });
+  /* 
+  IMP NOTE 💡: In "LoginForm.test.tsx", we put "handleSubmit" inside "expect" as we're waiting for "handleSubmit" to resolve. 
+  But here, as we have await in "useEffect", we're waiting for the entire "FetchPosts" component to resolve. So, we have "getByText" inside "expect".
+  */
 });
