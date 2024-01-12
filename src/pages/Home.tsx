@@ -56,6 +56,11 @@ export const HomePage = () => {
               Form
             </Link>
           </li>
+          <li>
+            <Link to="/posts" className="App-link">
+              Posts (Fetches API)
+            </Link>
+          </li>
         </ol>
       </div>
       <small style={{ background: "rgb(0,0,0,0.2)", padding: 8, fontSize: 16 }}>

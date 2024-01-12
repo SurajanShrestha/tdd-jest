@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { HomePage, CounterPage, FormPage } from "./pages";
+import { HomePage, CounterPage, FormPage, PostsPage } from "./pages";
 import { Layout } from "./layout";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/counter" element={<CounterPage />} />
           <Route path="/form" element={<FormPage />} />
+          <Route path="/posts" element={<PostsPage />} />
         </Route>
       </Routes>
     </div>
