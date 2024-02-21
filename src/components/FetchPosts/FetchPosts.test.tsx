@@ -18,7 +18,7 @@ test("should fetch posts", async () => {
     // Solution 💡:We need to put it inside "expect()" to wait for it.
     // const testString = screen.getByText(/sunt aut/i);
 
-    expect(screen.getByText(/ea molestias/i)).toBeTruthy();
+    expect(screen.getByText(/sunt aut/i)).toBeTruthy();
   });
   /* 
   IMP NOTE 💡: In "LoginForm.test.tsx", we put "handleSubmit" inside "expect" as we're waiting for "handleSubmit" to resolve. 
