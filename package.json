@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:staged": "CI=true react-scripts test",
+    "test:staged": "CI=true react-scripts test --o",
+    "test:staged_all": "CI=true react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky"
   },
