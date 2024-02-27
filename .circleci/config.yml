@@ -21,7 +21,11 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      # Replace this with a real test runner invocation
+      # Install Dependencies
+      - run:
+          name: Install dependencies
+          command: npm install
+      # Run Tests
       - run:
           name: Run tests
           command: npm run test:staged_all
