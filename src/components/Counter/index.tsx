@@ -14,7 +14,7 @@ export const Counter = () => {
   return (
     <div>
       <h3 data-testid="counter">Count 🔢: {count}</h3>
-      <button onClick={up} data-testid="count-upx" style={{ marginRight: 8 }}>
+      <button onClick={up} data-testid="count-up" style={{ marginRight: 8 }}>
         Increase Count
       </button>
       <button onClick={down} data-testid="count-down">
