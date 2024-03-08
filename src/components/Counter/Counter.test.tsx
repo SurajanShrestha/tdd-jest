@@ -6,7 +6,7 @@ it("increment counter", () => {
   // Reason 💡: Because, your actual code now has an additional "data-testid" attribute, whose purpose is only to be used in tests and does not play any role in the component's logic.
   const { getByTestId } = render(<Counter />);
 
-  fireEvent.click(getByTestId("count-up"));
+  fireEvent.click(getByTestId("count-upABCanansknakskasknask"));
   fireEvent.click(getByTestId("count-up"));
 
   expect(getByTestId("counter")).toHaveTextContent("2");
